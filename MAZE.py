@@ -16,7 +16,7 @@ def find_path_bfs(maze, start, goal):
         if (row, col) == goal:  # Si se llega al nodo objetivo
             return path  # Devolver el camino hasta el objetivo
 
-        directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]  # Definir las direcciones posibles
+        directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]  # Definir las direcciones posibles
 
         for d_row, d_col in directions:  # Iterar sobre las direcciones posibles
             new_row, new_col = row + d_row, col + d_col  # Calcular las coordenadas del nodo vecino
